@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(248, 248, 248); /* Cor de fundo */
+    display: flex;
+    justify-content: center; /* Centraliza a caixa horizontalmente */
+    align-items: center; /* Centraliza a caixa verticalmente */
+    height: 100vh; /* Altura da tela */
+    margin: 0; /* Remove margens padrão */
+}
+
+.caixa {
+    background-color: rgba(56, 54, 54, 0.5); /* Fundo com transparência */
+    border: 2px solid rgb(83, 68, 77); /* Borda sólida */
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 700px; /* Largura fixa */
+    height: 800px; /* Altura fixa */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: flex-start; /* Alinha os elementos no topo da caixa */
+    align-items: flex-start; /* Alinha os elementos à esquerda */
+    padding: 20px; /* Adiciona espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+}
+
+.titulo {
+    font-size: 32px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.label-usuario {
+    font-size: 18px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    margin-bottom: 10px; /* Espaçamento abaixo do rótulo */
+}
+
+.input-usuario {
+    width: 90%; /* Largura da caixa de texto */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo da caixa de texto */
+}
+
+.label-senha {
+    font-size: 18px; 
+    color: black; 
+    margin-bottom: 10px; 
+}
+
+.input-senha {
+    width: 90%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    margin-bottom: 20px; 
+}

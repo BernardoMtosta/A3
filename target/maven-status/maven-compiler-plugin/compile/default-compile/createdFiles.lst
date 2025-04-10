@@ -1,0 +1,4 @@
+com\utrip\projetoa3\model\Usuario.class
+com\utrip\projetoa3\repository\UsuarioRepository.class
+com\utrip\projetoa3\ProjetoA3Application.class
+com\utrip\projetoa3\controller\UsuarioController.class

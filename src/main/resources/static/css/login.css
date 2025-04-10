@@ -1,0 +1,80 @@
+body{
+    background-color: #E5D7F1;
+    background-size: 1371px 768px;
+    background-repeat: no-repeat;
+    text-align: center;
+   
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.usuario{
+    width: 10%;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.senha{
+    width: 10%;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.caixa{
+    width: 486px;
+    height: 768px;
+    background-color: #c4c4c4;
+    border-radius: 5%;
+    justify-content: center;
+    text-align: center;
+}
+
+.caixinha{
+   width: 214px;
+   height: 72px;
+   border-radius: 50%;
+   border: 2px solid #c51717;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+         background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        .logo{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+        }
+        .usuario{
+            width: 50%;
+            padding: 5px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 0 auto;
+        }
+
+        .senha{
+            width: 50%;
+            padding: 5px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 0 auto;
+        }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="loginForm">
+        <label for="nome">Usuário:</label>
+        <input type="text" id="nome" name="nome" class="usuario" required>
+        <br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" class="senha" required>
+        <br>
+        <button type="submit">Entrar</button>
+    </form>
+    <h4><a href="criar.html">Criar Conta</a></h4>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nome = document.getElementById('nome').value;
+            const senha = document.getElementById('senha').value;
+
+            fetch('http://localhost:8081/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ nome, senha })
+            })
+            .then(response => response.text())
+            .then(data => alert(data))
+            .catch(error => console.error('Erro:', error));
+        });
+    </script>
+</body>
+</html>
